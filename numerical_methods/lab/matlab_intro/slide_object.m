@@ -30,7 +30,10 @@ step_size = 1;
 
 % slide the object
 for ii=1:nsteps
-XXX % Write this block
+    % Write this block
+    Z(xmin:xmax,ymin:ymax)=0;
+    ymin=ymin+5; ymax=ymax+5;
+    Z(xmin:xmax,ymin:ymax)=1;
     figure(1)
     imagesc(Z)
 end
